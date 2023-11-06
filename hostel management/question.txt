@@ -1,0 +1,5 @@
+The Housing Office at a university wants to create a program to manage the 
+allocation of dormitory rooms for the upcoming academic year. They need your 
+help to design a Python program to automate this process. The program should 
+be able to assign rooms to students, keep track of the available and occupied 
+rooms, and provide room assignments based on certain criteria.
