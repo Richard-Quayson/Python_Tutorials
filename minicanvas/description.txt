@@ -1,0 +1,25 @@
+Project Description:
+This project aims to write a program that behaves like the Canvas Learning Management 
+System. The project should have the following functionalities:
+
+General:
+1. Allow users (students and faculty) to register accounts and login.
+2. Allow users to search for other students using their name or email addresss.
+3. Allow users to logout.
+4. Allow students and faculty to create announcements.
+
+Faculty:
+1. Allow faculty to create quizzes for students to take within set time.
+2. Allow faculty to upload quiz answers for auto-grading.
+3. Allow faculty to analyse the performance of students across quizzes or assignments.
+
+Students:
+1. Allow student to take quizzes uploaded by faculty.
+2. Allow student to view quiz scores after grading, the class mean, lowest, upper and 
+lower quartiles.
+
+NB:
+- The program is supposed to use a text (.txt) file(s) to store data necessary for 
+running the application. 
+- The program should equally persist the data such that the data is not lost after 
+the program ends.
