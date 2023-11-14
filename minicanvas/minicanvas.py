@@ -1,24 +1,24 @@
 class Ashesian:
     
-    def _init_(self, ID, name, nationality):
+    def __init__(self, ID, name, nationality):
         self.id = ID
         self.name = name
         self.courses = []
         self.nationality = nationality
         
-    def _str_(self):
+    def __str__(self):
         return f"Ashesian = ID: {self.id}, Name: {self.name}"
         
 
 class Student(Ashesian):
     
-    def _init_(self, ID, name, nationality, major, year_group, gpa=4.0):
-        super()._init_(ID, name, nationality)
+    def __init__(self, ID, name, nationality, major, year_group, gpa=4.0):
+        super().__init__(ID, name, nationality)
         self.major = major
         self.gpa = gpa
         self.year_group = year_group
         
-    def _str_(self):
+    def __str__(self):
         return f"Student = ID: {self.id}, Name: {self.name}, Nationality: {self.nationality}, Year Group: {self.year_group} Major: {self.major}, Courses: {self.courses}"
         # return "ID: (), Name: (), Major: (), Courses: ()".format(self.id, self.name, self.major, self.courses)
         
@@ -31,18 +31,18 @@ class Student(Ashesian):
         
 class Faculty(Ashesian):
     
-    def _init_(self, ID, name, nationality, department):
-        super()._init_(ID, name, nationality)
+    def __init__(self, ID, name, nationality, department):
+        super().__init__(ID, name, nationality)
         self.department = department
         self.certifications = []
         
-    def _str_(self):
+    def __str__(self):
         return f"Faculty = ID: {self.id}, Name: {self.name}, Courses: {self.courses}, Department: {self.department}, Certifications: {self.certifications}"
         
         
 class NotCanvas:
     
-    def _init_(self):
+    def __init__(self):
         self.students = []
         self.faculty = []
         self.courses = []
@@ -65,3 +65,22 @@ class NotCanvas:
         print("4. Exit")
         choice = input("What would you like to do? ")
         return choice
+    
+
+if __name__ == "__main__":
+    a1 = Ashesian("12342026", "Kofi Senam", "Ghanaian")
+    print(a1)
+
+    s1 = Student("12342026", "Richard Quayson", "Ghanaian", "CE", "2026", 2.0)
+    print(s1)
+
+    f1 = Faculty("23452020", "Dennis Owusu", "Ghanaian", "Computer Science and Information Systems")
+    print(f1)
+
+    print("\nAdding Ashesi Success to student1")
+    s1.add_course("Asheesi Success")
+    print(s1)
+
+    print("\nChanging student1's name to Comfort")
+    s1.change_name("Comfort Quayson")
+    print(s1)
