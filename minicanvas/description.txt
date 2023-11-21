@@ -1,6 +1,8 @@
 Project Description:
 This project aims to write a program that behaves like the Canvas Learning Management 
-System. The project should have the following functionalities:
+System. 
+
+The project should have the following functionalities:
 
 General:
 1. Allow users (students and faculty) to register accounts and login.
