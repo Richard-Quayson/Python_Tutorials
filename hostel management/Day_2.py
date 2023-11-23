@@ -13,7 +13,7 @@ rooms_data = [
     [room_number3, capacity, gender] // room 3
 ]
 
-Approach 2 (list in dict):      ==>     Selected 👍
+Approach 2 (list in dict):      ==>     Selected 👍👍
 rooms_data = {
     room_number1: [capacity, gender] // room 2
     room_number2: [capacity, gender] // room 2
